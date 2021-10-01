@@ -25,9 +25,9 @@ Vagrant.configure(2) do |config|
 
   end
 
-  config.vm.define :colte1 do |colte|
+  config.vm.define :colte do |colte|
     colte.vm.box = "ubuntu/bionic64"
-    colte.vm.hostname = "colte1"
+    colte.vm.hostname = "colte"
 
     colte.vm.network "private_network", ip: "192.168.41.200"
 
